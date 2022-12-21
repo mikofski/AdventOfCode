@@ -28,15 +28,14 @@
 
 int main() {
 
-    int number;
-    int ctr = 0;
-    char line[MAX_LEN], *result;
-    int calories = 0;
-    int  maxcals = 0;
-    char sPath[MAXPATH] = "";
-    char *pTmp;  // temp pointer to HOME
+    char *pTmp;  // temp pointer to HOME environment variable
+    char sPath[MAXPATH] = "";  // copy of HOME environment variable
     char folderpath[] = "/Projects/AOC/";
     char filepath[] = "input-1.txt";
+    char line[MAX_LEN], *result;  // a line read from input
+    int number;  // number converted from line of input
+    int calories = 0;
+    int maxcals = 0;
 
     if (( pTmp = getenv( "HOME" )) != NULL ) {
         strncpy( sPath, pTmp, MAXPATH-1 ); // Save a copy for our use.
