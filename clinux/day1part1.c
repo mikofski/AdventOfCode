@@ -33,7 +33,6 @@ int main() {
     char line[MAX_LEN], *result;
     int calories = 0;
     int  maxcals = 0;
-    int ndigits = 0;
     char sPath[MAXPATH] = "";
     char *pTmp;  // temp pointer to HOME
     char folderpath[] = "/Projects/AOC/";
@@ -59,8 +58,10 @@ int main() {
 
     while ( !feof(stream) ) {
         if ( (result = fgets(line, MAX_LEN, stream)) != NULL ) {
-            ndigits = strlen(result);
-            if ( (ndigits != 1) && (line[0] != '\n') ) {
+            // single quotes for characters, see above
+            // atoi returns zero if result is not a number
+            // https://stackoverflow.com/a/3214922/1020470
+            if ( line[0] != '\n' ) {
                 number = atoi(result);
                 calories += number;
             } else {
@@ -72,5 +73,5 @@ int main() {
         }
     }
     printf("The max cals is %d\n", maxcals);
-    return maxcals;
+    return 0;
 }
