@@ -1,6 +1,6 @@
 namespace aoc {
     public class Day1Part1 {
-        public double MaxCals;  // max calories carried by any elf
+        public int MaxCals;  // max calories carried by any elf
 
         /// <summary>
         /// Class to solve Adevent of Code 2022 Day 1 - Part 1: find the max
