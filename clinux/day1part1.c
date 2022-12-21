@@ -23,8 +23,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LEN 10
-#define MAX_ELVES 1000
+#define MAX_LEN 80
 #define MAXPATH 1024
 
 int main() {
@@ -33,7 +32,6 @@ int main() {
     int ctr = 0;
     char line[MAX_LEN], *result;
     int calories = 0;
-    int elves[MAX_ELVES];
     int  maxcals = 0;
     int ndigits = 0;
     char sPath[MAXPATH] = "";
@@ -66,7 +64,6 @@ int main() {
                 number = atoi(result);
                 calories += number;
             } else {
-                elves[ctr++] = calories;
                 if (calories > maxcals) {
                     maxcals = calories;
                 }
