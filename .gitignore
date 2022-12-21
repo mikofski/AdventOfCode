@@ -2,3 +2,4 @@
 csharp/bin
 csharp/obj
 venv
+c/*.exe
