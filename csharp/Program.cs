@@ -1,7 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-/* https://code.visualstudio.com/docs/languages/dotnet
- * to start a consle app, use dotnet new <template>
- * > dotnet new console -o day1part1 */
+﻿/* https://dotnet.microsoft.com/en-us/download/visual-studio-sdks
+ * https://dotnet.microsoft.com/en-us/download
+ * open c# will prompt .NET SDK installation if not present, min req > v5
+ * .NET sdk is free version, compare to VS2022 .NET desktop build tools
+ */
+
+/* to start a consle app, use dotnet new <template> -o <projdir>, EG:
+ * > dotnet new console -o day1part1
+ * See https://aka.ms/new-console-template for more information
+ * https://code.visualstudio.com/docs/languages/dotnet
+ */
 
 // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
 string home = Environment.ExpandEnvironmentVariables("%HOME%");

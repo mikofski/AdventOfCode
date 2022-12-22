@@ -2,4 +2,8 @@
 csharp/bin
 csharp/obj
 venv
-clinux/*.exe
+c/*.exe
+c/*.obj
+c/*.pdb
+c/vc140.pdb
+c/*.ilk
