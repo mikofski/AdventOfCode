@@ -26,11 +26,24 @@
 #define MAX_LEN 80
 #define MAXPATH 1024
 
+/* NOTE: to run in windows, start code in build tools.
+ * 1. start build tools shell
+ * 2. navigate to this working folder in build tools
+ * 3. execute `code .` in build tools to start code
+ */ 
+
+// https://stackoverflow.com/a/41643350/1020470
+#ifdef _WIN32
+#define DIRPATH "\\Projects\\AOC\\AOC22\\"
+#else
+#define DIRPATH "/Projects/AOC/"
+#endif
+
 int main() {
 
     char *pTmp;  // temp pointer to HOME environment variable
     char sPath[MAXPATH] = "";  // copy of HOME environment variable
-    char folderpath[] = "/Projects/AOC/";
+    char folderpath[] = DIRPATH;
     char filepath[] = "input-1.txt";
     char line[MAX_LEN], *result;  // a line read from input
     int number;  // number converted from line of input
