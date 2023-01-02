@@ -53,3 +53,6 @@ install using `--no-lock`.
 
 ## Julia
 Requires Julia Language Server
+
+## Golang (_aka_ Go)
+A bit of nightmare, but easy if you just install latest version following these [directions](https://go.dev/doc/install), follow VSCode Go plugin [instructions](https://github.com/golang/vscode-go/wiki/features#run-and-test-in-the-editor), and add `"dlvFlags": ["--only-same-user=false"]` to the `launch.json`
