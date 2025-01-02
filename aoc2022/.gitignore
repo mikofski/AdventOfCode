@@ -1,0 +1,11 @@
+.vscode
+csharp/bin
+csharp/obj
+venv
+c/*.exe
+c/*.obj
+c/*.pdb
+c/vc140.pdb
+c/*.ilk
+c/day1part1
+!c/*.c
